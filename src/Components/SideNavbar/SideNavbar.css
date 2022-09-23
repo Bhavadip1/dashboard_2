@@ -1,0 +1,183 @@
+.main {
+  height: 100% !important;
+}
+.logo {
+  float: left;
+  line-height: 0.8;
+  margin-left: 0.8rem;
+  margin-right: 0.5rem;
+  max-height: 33px;
+  width: auto;
+}
+
+.drawer > div {
+  background-color: #343a40 !important;
+}
+
+.logo_main {
+  margin: 15px;
+}
+.logo-text {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appbar_button {
+  text-transform: none !important;
+  color: inherit !important;
+}
+
+.appbar_toolbar {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.menu_button {
+  margin-right: 10px !important;
+}
+
+.divider_logo_buttom {
+  background: #7f7f7f;
+}
+
+.app_bar {
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 0px 0px rgb(0 0 0 / 10%) !important;
+
+  margin-left: 0% !important;
+  position: static !important;
+}
+.appbar_main {
+  width: 100% !important;
+}
+
+.user_main {
+  margin: 15px;
+}
+
+.user {
+  float: left;
+  line-height: 0.8;
+  margin-left: 0.8rem;
+  margin-right: 0.5rem;
+  max-height: 33px;
+  border-radius: 17px;
+}
+
+.user_text {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search_bar div {
+  height: 38px !important;
+  margin: 9px;
+  border: solid #7f7f7f;
+  border-width: 1px;
+  background: #3f474e;
+}
+
+.search_bar input {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  color: white;
+}
+.search_bar {
+  margin: 6px !important;
+}
+.search_bar ::before {
+  border-bottom: 0 !important;
+}
+
+.searchbar_button {
+  padding: 0% !important;
+  color: white !important;
+}
+
+.accordion_dashboard {
+  background: #343a40 !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.accordion_dashboard::before {
+  background: none !important;
+}
+
+.new_image_logo {
+  width: 15%;
+  margin-left: 75px;
+}
+
+.accordion_dashboard_summery div {
+  align-items: center !important;
+  margin: 0% !important;
+  padding: 5%;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.accordion_dashboard_summery :hover {
+  background-color: #494e53;
+}
+.accordion_dashboard_summery:visited {
+  color: #007bff;
+}
+.icon {
+  padding: 7px !important;
+}
+
+.typo_dashboard {
+  padding-left: 10px;
+}
+
+.accordion_button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 19px 0px !important;
+}
+
+.accordion_button_sub {
+  color: white !important;
+  text-transform: capitalize !important;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start !important;
+  padding: 8px !important;
+  border-radius: 7px !important;
+}
+
+.accordion_button_sub:hover {
+  background-color: #494e53 !important  ;
+}
+
+.accordion_button_sub :visited {
+  background-color: #007bff !important  ;
+}
+
+.sidenavbar_button {
+  color: white !important;
+  text-transform: capitalize !important;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start !important;
+  padding: 8px !important;
+  border-radius: 7px !important;
+  margin: 0% !important;
+  padding-left: 20px !important;
+}
+
+.sidenavbar_button:hover {
+  background-color: #494e53 !important  ;
+}
+
+.sidenavbar_button :visited {
+  background-color: #007bff !important  ;
+}
+
+.image_number6 {
+  width: 9%;
+  margin-left: 26px;
+}
