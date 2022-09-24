@@ -16,11 +16,14 @@ import AdminLTELogo from "../../Logo/AdminLTELogo.png";
 import user from "../../Image/user.jpg";
 import new_logo from "../../Image/new_logo.png";
 import number6 from "../../Image/number6.png";
+import number2 from "../../Image/number2.png";
 import { SearchOutlined } from "@mui/icons-material";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import PanoramaIcon from "@mui/icons-material/Panorama";
 
 const drawerWidth = 250;
 
@@ -83,14 +86,9 @@ const Drawer = styled(MuiDrawer, {
 
 export default function SideNavbar() {
   const [open, setOpen] = React.useState(true);
-  const [expanded, setExpanded] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(!open);
-  };
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
   };
 
   return (
@@ -102,7 +100,6 @@ export default function SideNavbar() {
             <span className="logo-text">AdminLTE 3</span>
           </a>
           <Divider className="divider_logo_buttom" />
-
           <a className="user_main">
             <img className="user" src={user} alt="Logo" />
             <span className="user_text">Alexander Pierce</span>
@@ -121,13 +118,8 @@ export default function SideNavbar() {
               ),
             }}
           />
-
           <div>
-            <Accordion
-              className="accordion_dashboard"
-              expanded={expanded === "panel1"}
-              onChange={handleChange("panel1")}
-            >
+            <Accordion className="accordion_dashboard">
               <AccordionSummary
                 className="accordion_dashboard_summery"
                 aria-controls="panel1bh-content"
@@ -135,7 +127,7 @@ export default function SideNavbar() {
               >
                 <i className="fa-solid fa-gauge-high"></i>
                 <Typography className="typo_dashboard">Dashboard</Typography>
-                {<ExpandMoreIcon sx={{ color: "white", marginLeft: "73px" }} />}
+                {<ExpandMoreIcon sx={{ color: "white", marginLeft: "78px" }} />}
               </AccordionSummary>
               <AccordionDetails className="accordion_button">
                 <Button className="accordion_button_sub">
@@ -149,6 +141,7 @@ export default function SideNavbar() {
                 </Button>
               </AccordionDetails>
             </Accordion>
+
             <Button className="sidenavbar_button">
               <AppsIcon />
               Widgets
@@ -156,11 +149,7 @@ export default function SideNavbar() {
             </Button>
           </div>
 
-          <Accordion
-            className="accordion_dashboard"
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
-          >
+          <Accordion className="accordion_dashboard">
             <AccordionSummary
               className="accordion_dashboard_summery"
               aria-controls="panel1bh-content"
@@ -199,6 +188,317 @@ export default function SideNavbar() {
               </Button>
               <Button className="accordion_button_sub">
                 <i className="fa-regular fa-circle"></i>Collapsed Sidebar
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-chart-pie"></i>
+              <Typography className="typo_dashboard">Charts</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "48%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>ChartJS
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Flot
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Inline
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>uPlot
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-tree"></i>
+              <Typography className="typo_dashboard">UI Elements</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "31%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>General
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Icons
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Buttons
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Sliders
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Modals & Alerts
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Navbar & Tabs
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Timeline
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Ribbons
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-pen-to-square"></i>
+              <Typography className="typo_dashboard">Forms</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "50%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>General Elements
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Advanced Elements
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Editors
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Validation
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-table"></i>
+              <Typography className="typo_dashboard">Tables</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "50%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Simple Tables
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>DataTables
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>jsGrid
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Typography className="typo_examples">EXAMPLES</Typography>
+
+          <Button className="sidenavbar_button">
+            <CalendarMonthIcon />
+            Calendar
+            <img className="image_number2" src={number2} alt="new" />
+          </Button>
+          <Button className="sidenavbar_button">
+            <PanoramaIcon />
+            Gallery
+          </Button>
+          <Button className="sidenavbar_button">
+            <i className="fa-solid fa-table-columns icon_column "></i>
+            Kanban Board
+          </Button>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <Typography className="typo_dashboard">Mailbox</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "45%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Inbox
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Compose
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Read
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-book"></i>
+              <Typography className="typo_dashboard">Pages</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "50%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Invoice
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Profile
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>E-commerce
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Projects
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>ProjectsAdd
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>ProjectsEdit
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Projects Detail
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Contacts
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>FAQ
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Contact us
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-regular fa-square-plus"></i>
+              <Typography className="typo_dashboard">Extras</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "50%" }} />}
+            </AccordionSummary>
+
+            <Accordion className="accordion_dashboard">
+              <AccordionSummary
+                className="accordion_dashboard_summery"
+                aria-controls="panel1bh-content"
+                id="panel1bh-header"
+              >
+                <i className="fa-regular fa-circle"></i>
+                <Typography className="typo_dashboard">
+                  Login & Registerv1
+                </Typography>
+                {<ExpandMoreIcon sx={{ color: "white", marginLeft: "5%" }} />}
+              </AccordionSummary>
+              <AccordionDetails className="accordion_button">
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Login v1
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Register v1
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Forgot Password v1
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Recover Password v1
+                </Button>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion className="accordion_dashboard">
+              <AccordionSummary
+                className="accordion_dashboard_summery"
+                aria-controls="panel1bh-content"
+                id="panel1bh-header"
+              >
+                <i className="fa-regular fa-circle"></i>
+                <Typography className="typo_dashboard">
+                  Login & Registerv2
+                </Typography>
+                {<ExpandMoreIcon sx={{ color: "white", marginLeft: "5%" }} />}
+              </AccordionSummary>
+              <AccordionDetails className="accordion_button">
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Login v2
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Register v2
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Forgot Password v2
+                </Button>
+                <Button className="accordion_button_sub">
+                  <i className="fa-regular fa-circle"></i>Recover Password v2
+                </Button>
+              </AccordionDetails>
+            </Accordion>
+
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Lockscreen
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Legacy User Menu
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Language Menu
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Error 404
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Error 500
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Pace
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Blank Page
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Starter Page
+              </Button>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordion_dashboard">
+            <AccordionSummary
+              className="accordion_dashboard_summery"
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>{" "}
+              <Typography className="typo_dashboard">Search</Typography>
+              {<ExpandMoreIcon sx={{ color: "white", marginLeft: "47%" }} />}
+            </AccordionSummary>
+            <AccordionDetails className="accordion_button">
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Simple Search
+              </Button>
+              <Button className="accordion_button_sub">
+                <i className="fa-regular fa-circle"></i>Enhanced
               </Button>
             </AccordionDetails>
           </Accordion>

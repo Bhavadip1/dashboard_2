@@ -99,6 +99,7 @@
   background: #343a40 !important;
   color: white !important;
   box-shadow: none !important;
+  margin: 0% !important;
 }
 
 .accordion_dashboard::before {
@@ -117,7 +118,9 @@
   border-radius: 7px;
   align-items: center;
 }
-
+.accordion_dashboard_summery {
+  padding: 0% !important;
+}
 .accordion_dashboard_summery :hover {
   background-color: #494e53;
 }
@@ -166,7 +169,6 @@
   padding: 8px !important;
   border-radius: 7px !important;
   margin: 0% !important;
-  padding-left: 20px !important;
 }
 
 .sidenavbar_button:hover {
@@ -180,4 +182,19 @@
 .image_number6 {
   width: 9%;
   margin-left: 26px;
+}
+.typo_examples {
+  color: white;
+  margin: 8px !important;
+  font-size: 12px !important;
+}
+
+.image_number2 {
+  width: 9%;
+  margin-left: 38%;
+}
+
+.icon_column {
+  font-size: 18px;
+  margin-left: 3px;
 }
