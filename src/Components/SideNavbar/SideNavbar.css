@@ -30,6 +30,8 @@
 
 .appbar_toolbar {
   color: rgba(0, 0, 0, 0.5) !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu_button {
@@ -100,6 +102,7 @@
   color: white !important;
   box-shadow: none !important;
   margin: 0% !important;
+  padding-left: 35px;
 }
 
 .accordion_dashboard::before {
@@ -150,6 +153,7 @@
   justify-content: flex-start !important;
   padding: 8px !important;
   border-radius: 7px !important;
+  margin-left: 5px !important;
 }
 
 .accordion_button_sub:hover {
@@ -169,6 +173,7 @@
   padding: 8px !important;
   border-radius: 7px !important;
   margin: 0% !important;
+  padding-left: 35px !important;
 }
 
 .sidenavbar_button:hover {
@@ -181,7 +186,7 @@
 
 .image_number6 {
   width: 9%;
-  margin-left: 26px;
+  margin-left: 18px;
 }
 .typo_examples {
   color: white;
@@ -197,4 +202,103 @@
 .icon_column {
   font-size: 18px;
   margin-left: 3px;
+}
+.text-danger {
+  color: red;
+}
+.text-warning {
+  color: #ffc107;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+.hide {
+  display: none !important;
+}
+.level1 {
+  padding-left: 32px !important;
+}
+
+.right {
+  padding: 0% !important;
+  min-width: 42px !important;
+}
+
+.search_textfield {
+  width: 100%;
+}
+
+.search_textfield input {
+  height: 0;
+}
+.closeicon_button {
+  min-width: 0% !important;
+  padding: 0% !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+.badge_notificationicon > span {
+  background-color: #dc3545;
+  padding: 0%;
+  border-radius: 4px;
+  height: auto;
+  min-width: 14px;
+  color: white;
+}
+
+.badge_notificationicon_bell > span {
+  background-color: #ffc107;
+  padding: 0%;
+  border-radius: 4px;
+  height: auto;
+  min-width: 18px;
+}
+.list_user {
+  height: 100%;
+}
+
+.typo_card_buttom {
+  font-size: 0.8rem !important;
+  align-items: center;
+  display: flex;
+}
+.time_icon {
+  font-size: 16px !important;
+  margin-right: 7px;
+}
+.list_item_icon {
+  margin-left: 50%;
+  margin-bottom: 100%;
+  color: #dc3545;
+}
+.second_list_item {
+  color: #6c757d;
+}
+.third_list_item {
+  color: #ffc107;
+}
+.list_bar {
+  display: flex;
+  flex-direction: column;
+}
+.list_btn_bottum {
+  color: #343a40 !important;
+  text-transform: capitalize !important;
+}
+
+.notification_list_item {
+  min-width: 0 !important;
+  margin-right: 10px;
+}
+.notification_text {
+  margin-left: 20% !important;
+}
+.list_head {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 4px !important;
+}
+
+.box_main {
+  background-color: #f4f6f9;
 }

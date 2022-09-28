@@ -1,0 +1,194 @@
+.heder_main {
+  width: fit-content;
+  padding: 15px !important;
+  height: 100%;
+}
+
+.grid_main {
+  margin-left: 0 !important;
+  width: 99% !important;
+  margin-top: 15px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.box_item_1 {
+  padding: 0% !important;
+}
+
+.box_1 {
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #17a2b8 !important;
+}
+
+.inner_box {
+  text-align: start;
+  margin: 10px;
+  color: white;
+}
+.inner_box_icon {
+  font-size: 10px;
+  padding: 12px;
+}
+.bag_icon {
+  font-size: 5.5rem !important;
+  opacity: 0.4;
+}
+
+.more_info_button {
+  width: 100%;
+  background-color: #1591a5 !important;
+  border-radius: 0% !important;
+  text-transform: capitalize !important;
+  color: white !important;
+}
+.arrow_icon {
+  margin-left: 5px;
+}
+
+.box_2 {
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #28a745 !important;
+}
+
+.box_item_2 {
+  padding: 0% !important;
+}
+.chart_icon {
+  font-size: 5.5rem !important;
+  opacity: 0.4;
+}
+.more_info_button_2 {
+  width: 100%;
+  background-color: #24963e !important;
+  border-radius: 0% !important;
+  text-transform: capitalize !important;
+  color: white !important;
+}
+
+.box_3 {
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffc107 !important;
+}
+.box_item_3 {
+  padding: 0% !important;
+}
+
+.person_icon {
+  font-size: 5.5rem !important;
+  opacity: 0.4;
+}
+.yellow {
+  color: black;
+}
+.more_info_button_3 {
+  width: 100%;
+  background-color: #e5ad06 !important;
+  border-radius: 0% !important;
+  text-transform: capitalize !important;
+  color: black !important;
+}
+
+.box_4 {
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dc3545 !important;
+}
+.box_item_4 {
+  padding: 0% !important;
+}
+
+.pie_chart_icon {
+  font-size: 5.5rem !important;
+  opacity: 0.4;
+}
+.more_info_button_4 {
+  width: 100%;
+  background-color: #c6303e !important;
+  border-radius: 0% !important;
+  text-transform: capitalize !important;
+  color: white !important;
+}
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0% !important;
+}
+.box_chart {
+  padding: 0% !important;
+  border-radius: 0% !important;
+  box-shadow: none !important;
+}
+.chart_card {
+  border-radius: 0% !important;
+  box-shadow: 0 solid rgba(0, 0, 0, 0.125);
+}
+
+.btn_area {
+  color: #6c757d !important;
+  text-transform: capitalize !important;
+}
+
+.btn_donut {
+  color: #6c757d !important;
+  text-transform: capitalize !important;
+}
+.header_chart_icon {
+  font-size: 20px;
+  margin: 11px;
+}
+.typo_sales {
+  font-size: 18px;
+  color: #324658;
+}
+.line_chart {
+  padding: 25px;
+}
+.chart_main_box {
+  height: 400px;
+  display: grid;
+  align-items: center;
+}
+.map_card {
+  box-shadow: none !important;
+  background-color: #1083ff !important;
+}
+.header_map_icon {
+  font-size: 20px;
+  margin: 11px;
+}
+.box_map {
+  padding: 0% !important;
+}
+.map_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.typo_visitors {
+  font-size: 18px;
+  color: white;
+}
+.btn_calender {
+  background-color: #007bff !important;
+  min-width: 0 !important;
+  color: white !important;
+  margin-right: 10px !important;
+}
+.btn_less {
+  background-color: #007bff !important;
+  min-width: 0 !important;
+  color: white !important;
+  margin-right: 10px !important;
+}
